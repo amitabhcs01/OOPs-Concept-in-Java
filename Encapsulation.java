@@ -1,4 +1,5 @@
 import java.util.*;
+//Encapsulation means:  wrapping up of data member and mumber function in the same class;
 class Capsule{
     public int num1; //data members 
     public int num2;//data members 
