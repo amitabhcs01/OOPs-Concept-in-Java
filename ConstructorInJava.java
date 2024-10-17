@@ -28,6 +28,24 @@ class Constructor{
      * 2) Non Parametrized also known as Default constructor;
      * 3) Copy Constructor;
      */
+    
+     /*Syntex of NonParametrized Constructor: 
+      *  class Hello{
+        private <DataType> variable;
+        public Hello() {
+        //stmt
+        }
+        }
+      */
+
+      /*Syntex of NonParametrized Constructor: 
+      *  class Hello{
+        private <DataType> variable;
+        public Hello(<DataType> Variable name) {   ...passed parameter 
+        //stmt
+        }
+        }
+      */
 }
 public class ConstructorInJava {
 
