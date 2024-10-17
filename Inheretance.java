@@ -9,7 +9,7 @@ import java.util.*;
  * 1} General Terms to remember: 
  *     i) parents class / base class / super class;
  *     ii) Child class / derived class
- * 2} we can inherit property of the parent class by using "extend" keyword in child class ;
+ * 2} we can inherit property of the parent class by using "extends" keyword in child class ;
  * 
  * Types of Inheretance: 
  * 1> Single Inheretance
@@ -27,7 +27,7 @@ import java.util.*;
  * class Father{
  *   //statement(mathods)
  * }
- * class Child extend Father{
+ * class Child extends Father{
  *   //statement
  * }
  * 
@@ -40,22 +40,57 @@ import java.util.*;
  *class GrandFather{
  *   //statement(mathods)
  * }
- * class Father extend GrandFather{
+ * class Father extends GrandFather{
  *   //statement
  * }
- * class Child extend Father{
+ * class Child extends Father{
  * //statement
  * .....in this child class is indirectly use the porpert of the GrandFather;
  * }
  */
+//Single Inheretance : 
+//Making a Calculator: 
 
-class InhrOld{
-    
-}
-class InhrNew{
 
+class Calc{
+    public int sum(int num1 , int num2) {
+        return num1+num2;
+    }
+    public int substract(int num1 , int num2) {
+        return num1-num2;
+    }
+} 
+//now I want to add some more features like multipy and division but also  in that class I want to inherit the property of Calc class, we use the concept of inheretance 
+//it provide reusablity ;
+class AdvCalc extends Calc{
+    public int multi(int num1 , int num2) {
+        return num1*num2;
+    }
+    public double divi(int num1 , int num2) {
+        if(num2 > 0) {
+            return num1/num2;
+        } else{
+            return 0;
+        }
+    }
 }
 public class Inheretance {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number 1: ");
+        int num1 = sc.nextInt();
+        System.out.println("Enter number 2: ");
+        int num2 = sc.nextInt();
 
-    
+        AdvCalc obj = new AdvCalc();
+        int result1 = obj.sum(num1,num2);
+        int result2 = obj.substract(num1,num2);
+        int result3 = obj.multi(num1,num2);
+        double result4 = obj.divi(num1,num2);
+
+        System.out.println("\nSum: "+result1 + "\nSubstraction: " + result2 + "\nMultiplication:  " + result3 + "\nDivision: "+ result4);
+
+        
+
+    }  
 }
