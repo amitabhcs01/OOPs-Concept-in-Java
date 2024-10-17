@@ -3,6 +3,7 @@ import java.util.*;
 class Capsule{
     public int num1; //data members 
     public int num2;//data members 
+    //we can access Private data with the help of public method("Member Function") within the class ;
 
     public int getSum(int num1 ,  int num2) //memberFunction (Methods)
     {
