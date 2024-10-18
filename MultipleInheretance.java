@@ -1,3 +1,4 @@
+/*
 class GrandParents{
     //property;
 }
@@ -27,3 +28,4 @@ public class MultipleInheretance {
     }
 
 }
+      */
