@@ -38,7 +38,7 @@ class Constructor{
         }
       */
 
-      /*Syntex of NonParametrized Constructor: 
+      /*Syntex of Parametrized Constructor: 
       *  class Hello{
         private <DataType> variable;
         public Hello(<DataType> Variable name) {   ...passed parameter 
